@@ -8,9 +8,9 @@
 <body>
 	<header>
 		<a href="index.html">Back to Home</a>
-		<h1>Register Now!</h1>
+		<h1>Sign Up Now!</h1>
 	</header>
-	<form>
+	<form method="get">
 		<div>
 			<label for="user-name">Name:</label>
 			<input type="text" name="user-name">	
@@ -19,6 +19,50 @@
 		<div>
 			<label for="user-email">Email:</label>
 			<input type="text" name="user-email">
+		</div>
+
+		<div>
+			<label for="color-primary">Pick one primary color:</label>
+			<select name="color-primary">
+				<option value="red">Red</option>
+				<option value="green">Green</option>
+				<option value="blue">Blue</option>
+			</select>
+		</div>
+
+		<div>
+			<span>Pick one or more secondary colors:</span>
+			<div>
+				<input type="checkbox" name="color-secondary" value="Yellow" id="color-yellow">
+				<label for="color-yellow">Yellow</label>
+			</div>
+
+			<div>
+				<input type="checkbox" name="color-secondary" value="Cyan" id="color-cyan">
+				<label for="color-cyan">Cyan</label>
+			</div>
+
+			<div>
+				<input type="checkbox" name="color-secondary" value="Magenta" id="color-magenta">
+				<label for="color-magenta">Magenta</label>
+			</div>
+		</div>
+
+		<div>
+			<span>Pick one tertiary color:</span>
+			<select name="color-tertiary">
+				<option value="red">Orange</option>
+				<option value="green">Chartreuse</option>
+				<option value="blue">Spring Green</option>
+				<option value="red">Azure</option>
+				<option value="green">Violet</option>
+				<option value="blue">Rose</option>
+			</select>
+		</div>
+
+		<div>
+			<input type="submit" value="Sign Up">
+			<input type="reset" value="Cancel">
 		</div>
 	</form>
 </body>
