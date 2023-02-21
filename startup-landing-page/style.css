@@ -4,3 +4,13 @@ html {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(header.jpg);
+  background-size: cover;
+  color: #fff;
+}
