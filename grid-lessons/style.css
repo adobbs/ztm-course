@@ -5,9 +5,12 @@
     grid-template-rows: 1fr;
 }
 
+.green {
+    grid-column: span 2;
+}
+
 .zone {
     cursor:pointer;
-/*    display:inline-block;*/
     text-align: center;
     font-size:10em;
     border-radius:4px;
