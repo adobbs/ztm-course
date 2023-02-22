@@ -1,5 +1,6 @@
 body {
     display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     margin: 0;
 }
@@ -27,11 +28,37 @@ body {
     padding: 256px 16px;
 }
 
+.projects {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    padding: 24px;
+}
+
+.project {
+    background-color: #ccc;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+img {
+    max-width: 128px;
+}
+
+@media (min-width: 896px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .zone {
 /*    padding:30px 50px;*/
 /*    margin:40px 60px;*/
 /*    cursor:pointer;*/
-    display:inline-block;
+/*    display:inline-block;*/
     color:#FFF;
     font-size:2em;
 /*    border-radius:4px;*/
