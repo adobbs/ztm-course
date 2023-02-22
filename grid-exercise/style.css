@@ -37,15 +37,24 @@ body {
 }
 
 .project {
-    background-color: #ccc;
-    border: 2px solid blue;
+    background-color: #333;
+    border: 2px solid #777;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 24px;
+    min-height: 128px;
+    border-radius: 16px;
 }
 
 img {
-    max-width: 128px;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.footer {
+    text-align: center;
+    padding: 16px 16px;
 }
 
 @media (min-width: 896px) {
@@ -55,15 +64,8 @@ img {
 }
 
 .zone {
-/*    padding:30px 50px;*/
-/*    margin:40px 60px;*/
-/*    cursor:pointer;*/
-/*    display:inline-block;*/
     color:#FFF;
     font-size:2em;
-/*    border-radius:4px;*/
-/*    border:1px solid #bbb;*/
-/*    transition: all 0.3s linear;*/
 }
 
 .zone:hover {
