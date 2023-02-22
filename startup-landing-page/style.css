@@ -4,3 +4,32 @@ html {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: url(header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #f05f44;
+  border-color: #f05f44;
+  transition: transform 0.2s ease-in;
+  --bs-btn-hover-bg: #ee4b08; 
+  --bs-btn-hover-border-color: #ee4b08;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 16px 48px;
+  border-radius: 300px;
+}
