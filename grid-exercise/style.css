@@ -1,13 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.nav-bar span {
+    font-size: 1.5rem;
+}
+
+.main-pages span {
+    margin-right: 16px;
+}
+
+.account-pages span {
+    margin-left: 16px;
+}
+
+.cover {
+    text-align: center;
+    padding: 256px 16px;
+}
+
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
-    cursor:pointer;
+/*    padding:30px 50px;*/
+/*    margin:40px 60px;*/
+/*    cursor:pointer;*/
     display:inline-block;
     color:#FFF;
     font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
+/*    border-radius:4px;*/
+/*    border:1px solid #bbb;*/
+/*    transition: all 0.3s linear;*/
 }
 
 .zone:hover {
