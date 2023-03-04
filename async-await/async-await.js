@@ -62,3 +62,15 @@ const getData = async () => {
     }
 }
 
+const getData2 = async () => {
+    try {
+        const arrayOfPromises = urls.map(url => fetch(url));
+        for await (let request of arrayOfPromises) {
+            const data = await request.json();
+            console.log(data);
+        }
+    } catch (err) {
+        console.log('Error', err);
+    }
+}
+
